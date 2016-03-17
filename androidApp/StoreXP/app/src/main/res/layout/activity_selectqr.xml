@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sorry there is an error with The QR code ."/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:layout_marginTop="32dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:id="@+id/back"
+        />
+</LinearLayout>

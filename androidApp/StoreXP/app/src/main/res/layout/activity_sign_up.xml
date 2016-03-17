@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.shashank.storexp.activities.SignUpActivity"
+    android:orientation="vertical">
+
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_modified_states"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_margin="12dp"
+        />
+
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_modified_states"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_margin="12dp"/>
+
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_modified_states"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_margin="12dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="9"
+    android:layout_margin="12dp">
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:hint="Phone"
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_modified_states"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_weight="4"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:padding="12dp"
+        android:id="@+id/send_otp"
+        android:layout_weight="5"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="16dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:layout_margin="12dp">
+        <com.example.shashank.storexp.views.CustomFontEditText
+            android:hint="Enter OTP"
+            android:id="@+id/enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_modified_states"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:layout_weight="4"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:id="@+id/verify_otp"
+            android:padding="12dp"
+            android:layout_weight="5"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_margin="8dp"
+    android:layout_width="240dp"
+        android:id="@+id/alerttext"
+    android:layout_height="wrap_content"
+    android:textSize="8sp"
+    android:layout_gravity="center_horizontal"
+    android:text="By doing all this shit, you confirm that you're at least 13 years old you agree to Aquita's trems and Conditions and Privacy Policy"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_account"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:background="#000000"
+        android:text="Create Account"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
+
+

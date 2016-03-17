@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You hare on :"
+        android:id="@+id/text1"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:textSize="16dp"/>
+    <com.example.shashank.storexp.views.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_margin="20dp"
+        android:text="No Store Selected :("
+        android:layout_centerHorizontal="true"
+        android:textColor="#878787"
+        android:textSize="30dp"
+        android:layout_below="@+id/text1"
+        />
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text2"
+        android:text="Go To search for all offers available in store"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to List"
+        android:visibility="gone"
+        android:id="@+id/add"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:padding="8dp"
+
+        android:textColor="#ffffff"></Button>
+    <Button
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scanQR"
+        android:text="Scan the Store"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        >
+
+    </Button>
+</RelativeLayout>

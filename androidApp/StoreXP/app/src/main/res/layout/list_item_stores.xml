@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card_view"
+    android:clickable="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    card_view:cardCornerRadius="2dp"
+    android:layout_margin="12dp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#ffffff"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storeImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            card_view:border_width="2dp"
+            android:src="@drawable/ccd"/>
+
+        <com.example.shashank.storexp.views.CustomTextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/storeImage"
+            android:layout_alignTop="@+id/storeImage"
+            android:layout_marginLeft="20dp"
+            android:text="Cafe Coffee Day"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <com.example.shashank.storexp.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/storeName"
+            android:layout_marginLeft="16dp"
+            android:text="50"
+            android:padding="8dp"
+            android:background="@drawable/background"
+            android:id="@+id/storePoints"/>
+        <com.example.shashank.storexp.views.CustomTextView
+            android:id="@+id/membership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/storeImage"
+            android:layout_alignStart="@+id/storeName"
+            android:layout_below="@+id/storeImage"
+            android:layout_marginLeft="12dp"
+            android:text="Gold Member"
+            android:textColor="#87000000"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+
+                <com.example.shashank.storexp.views.CustomTextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#87000000"
+                    android:text="50 Points"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/storeImage"
+                    android:layout_alignRight="@+id/storeName"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/membership"
+            android:orientation="horizontal"
+            >
+            <com.example.shashank.storexp.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tagged:"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagslist"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/locate"
+                android:text="Call"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:id="@+id/call"
+                android:layout_marginRight="16dp"
+                />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locate"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:id="@+id/locate"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

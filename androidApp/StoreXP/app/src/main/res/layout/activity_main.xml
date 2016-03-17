@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/buttons">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+
+            />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_weight="1"
+            />
+        <!--<ImageButton-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/gplus"-->
+            <!--android:id="@+id/gplussignin"/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/fb"-->
+            <!--android:id="@+id/fbsignin"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/buttons"
+        android:id="@+id/seperator"
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#909090"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#909090"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:text="OR"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_below="@+id/buttons"
+        android:layout_centerHorizontal="true"/>
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:textColorHint="#878787"
+        android:id="@+id/username"
+        android:layout_below="@+id/seperator"
+        android:layout_marginTop="40dp"/>
+
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Eamil ID"
+        android:textColorHint="#878787"
+        android:id="@+id/emailid"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="16dp"/>
+
+    <com.example.shashank.storexp.views.CustomFontEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#878787"
+        android:id="@+id/password"
+        android:layout_below="@+id/emailid"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:text="SIGN IN"
+        android:textSize="16sp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/signin"
+        />
+    <com.example.shashank.storexp.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@+id/signin"
+        android:textColor="#800000"
+        android:clickable="true"
+        android:id="@+id/forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+    <!--<view-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/forgot"-->
+    <!--android:layout_toLeftOf="@+id/forgot"-->
+    <!--android:layout_toRightOf="@+id/forgot"-->
+    <!--/>-->
+
+</RelativeLayout>
