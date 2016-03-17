@@ -1,2 +1,2 @@
-# customer
-The customer facing interface of aqita
+# 1.0: Loyalty Program
+
