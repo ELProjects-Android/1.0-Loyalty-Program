@@ -26,5 +26,6 @@ Allows customers to:
 - Favorite/follow stores
 - Redeem rewards and loyalty points
 
+The interfaces are freely available here for anyone to use in their application
 
 
